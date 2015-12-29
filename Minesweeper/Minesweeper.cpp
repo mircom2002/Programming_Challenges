@@ -10,51 +10,44 @@ int main(){
 	
 	while(1){
 		scanf("%d %d", &n, &m);
-		if(n==0 && m==0) break;
-			
-		T++;
-		
-		int **a=new int*[n];
-		
-		for(int i=0;i<n+2;i++){
-			a[i]=new int[m];
-			for(int j=0;j<n+2;j++){
-				a[i][j]=0;
-			}
+		if(n==0 && m==0) {
+			break;
 		}
-
-		char *s;
+		T++;
+	
+		int a[102][102]={0};
+	
+		char s[100];
 
 		for(int i=1;i<n+1;i++){
 			scanf("%s", s);
 			for(int j=1;j<m+1;j++){
-				if(s[j]=='*'){
-					a[i][j]=-1;
-					a[i][j-1]++;
-					a[i][j+1]++;
+				if(s[j-1]=='*'){
+					a[i][j]=-1000;
 					a[i-1][j-1]++;
 					a[i-1][j]++;
 					a[i-1][j+1]++;
+					a[i][j-1]++;
+					a[i][j+1]++;
 					a[i+1][j-1]++;
 					a[i+1][j]++;
-					a[i+1][j+1]++;
+					a[i+1][j+1]++;		
 				}	
 			}
-		}
-		
-		printf("Field #%d:", T);
 
+		}
+
+		printf("\nField #%d:\n", T);	
+		
 		for(int i=1;i<n+1;i++){
 			for(int j=1;j<m+1;j++){
-				if(a[i][j]==-1) 
+				if(a[i][j]<0)
 					printf("*");
 				else
 					printf("%d", a[i][j]);
 			}
 			printf("\n");
-		}
-
-		printf("\n");	
+		}	
 
 	}
 	return 0;
