@@ -1,0 +1,43 @@
+Scenario 1
+Departure 0830 START
+Arrival   0950 ENDE
+
+Scenario 2
+Departure 0815 START
+Arrival   0955 ENDE
+
+Scenario 3
+Departure 0810 START
+Arrival   0950 ENDE
+
+Scenario 4
+Departure 0810 START
+Arrival   1000 ENDE
+
+Scenario 5
+No connection
+
+Scenario 6
+No connection
+
+Scenario 7
+No connection
+
+Scenario 8
+No connection
+
+Scenario 9
+Departure 0900 START
+Arrival   1045 ENDE
+
+Scenario 10
+Departure 0805 START
+Arrival   1029 ENDE
+
+Scenario 11
+No connection
+
+Scenario 12
+Departure 0141 AA
+Arrival   0320 DV
+

@@ -4,7 +4,7 @@
 #include <vector>
 #include <string>
 #include <string.h>
-#define MAX_NUM 99999999
+#define MAX_NUM 999999999
 
 
 using namespace std;
@@ -111,6 +111,7 @@ int main(){
 			}
 
 
+
 		}
 
 		printf("%d\n\n", newStation);
@@ -126,7 +127,6 @@ int main(){
 			cout << b[i] << endl;
 		}
 */
-
 	}
 	return 0;
 }	
